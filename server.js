@@ -43,8 +43,6 @@ var  executeQuery = function(query,resp){
       }
     });
   }
-  // create Request object
-
   // query to the database
   con.query(query, function (err, res) {
     if (err) {
@@ -52,20 +50,21 @@ var  executeQuery = function(query,resp){
       resp.send(err);
     }else{
       // console.log("Result :- " + res);
-      resp.send(res);
+       resp.send(res);
     }
   });
 };
 
 
 
-app.route('/api/cats').get((req, res) => {
-  var query ="select * from cds";
+app.route('/api/cds').get((req, res) => {
+  var query ="select cds.CdId , cds.Title , cds.Capacity, cds.DataUsage , cds.Desribe , collections.NAME from cds JOIN collections ON cds.collectionId = collections.CollectionId";
 executeQuery (query,res);
 });
 
 
-app.route('/api/cats/:name').delete((req, res) => {
-  res.sendStatus(204);
+app.route('/api/collections').get((req, res) => {
+  var query ="select * from collections";
+executeQuery (query,res);
 });
 

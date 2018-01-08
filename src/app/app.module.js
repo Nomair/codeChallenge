@@ -7,7 +7,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var service_1 = require("./Classes/service");
 var app_component_1 = require("./app.component");
+var forms_1 = require("@angular/forms");
+var http_1 = require("@angular/http");
+var read_cds_component_1 = require("./read-cds.component");
+var create_cd_component_1 = require("./create-cd.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -15,9 +20,10 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [app_component_1.AppComponent],
-        bootstrap: [app_component_1.AppComponent]
+        providers: [service_1.Service],
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, forms_1.ReactiveFormsModule],
+        declarations: [app_component_1.AppComponent, read_cds_component_1.ReadCdsComponent, create_cd_component_1.CreateCdComponent],
+        bootstrap: [app_component_1.AppComponent, read_cds_component_1.ReadCdsComponent]
     })
 ], AppModule);
 exports.AppModule = AppModule;

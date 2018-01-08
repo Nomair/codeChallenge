@@ -1,0 +1,59 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<div class="col-md-12">
+  <div class='page-header'><h1>Cds List</h1></div>
+</div>
+
+<div class="row m-b-18px">
+  <div class="col-md-12">
+    <!-- button to create new cd -->
+    <a (click)="createCd()" class='btn btn-primary pull-right'>
+      <span class='glyphicon glyphicon-plus'></span> Create Cd
+    </a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+
+    <!-- HTML table for our list of cd records -->
+    <table class='table table-hover table-responsive table-bordered table-striped table-condensed'>
+      <tr>
+        <th>ID</th>
+        <th>Collection</th>
+        <th>Title</th>
+        <th>Capacity</th>
+        <th>Data Usage</th>
+        <th>Description</th>
+        <th></th>
+      </tr>
+
+      <!-- Use *ngFor directive to loop throught our list of cds. -->
+      <tr *ngFor="let cd of cds">
+        <td>{{cd.CdId}}</td>
+        <td>{{cd.NAME}}</td>
+        <td>{{cd.Title}}</td>
+        <td>{{cd.Capacity}}</td>
+        <td>{{cd.DataUsage}}</td>
+        <td>{{cd.Desribe}}</td>
+        <td>
+          <!-- read one cd button -->
+          <a (click)="readOneCd(cd.id)" class='btn btn-primary m-r-5px'>
+            <span class='glyphicon glyphicon-eye-open'></span> Read
+          </a>
+
+          <!-- edit cd button -->
+          <a (click)="updateCd(cd.id)" class='btn btn-info m-r-5px'>
+            <span class='glyphicon glyphicon-edit'></span> Edit
+          </a>
+
+          <!-- delete cd button -->
+          <a (click)="deleteCd(cd.id)" class='btn btn-danger m-r-5px'>
+            <span class='glyphicon glyphicon-remove'></span> Delete
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+

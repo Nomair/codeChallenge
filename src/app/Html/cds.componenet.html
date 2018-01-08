@@ -1,0 +1,102 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<div class="row m-b-18px">
+  <div class="col-md-12">
+    <a (click)="readCds()" class='btn btn-primary pull-right'>
+      <span class='glyphicon glyphicon-list'></span> Read Cds
+    </a>
+  </div>
+</div>
+
+<!-- HTML form for creating a cd -->
+<div class="row">
+  <div class="col-md-12">
+
+    <!--
+        1. Bind our HTML form to Angular using [formGroup]
+        2. If form was submitted, call createCd() method of CreateCdComponent
+    -->
+    <form [formGroup]="create_cd_form" (ngSubmit)="createCd()">
+      <table class="table table-hover table-responsive table-bordered">
+        <tr>
+          <td>Name</td>
+          <td>
+            <!-- Bind this input field to our 'angular form field' using formControlName -->
+            <input
+              formControlName="name"
+              name="name" type="text"
+              class="form-control" required />
+
+            <!-- show this error if the field is 'empty' and 'touched' -->
+            <div
+              *ngIf="create_cd_form.get('name').touched && create_cd_form.get('name').hasError('required')"
+              class="alert alert-danger">
+              Name is required.
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Price</td>
+          <td>
+            <input
+              formControlName="price"
+              type="number" name="price"
+              class="form-control" required />
+
+            <!-- show this error if the field is 'empty' and 'touched' -->
+            <div
+              *ngIf="create_cd_form.get('price').touched && create_cd_form.get('price').hasError('required')"
+              class="alert alert-danger">
+              Price is required.
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Description</td>
+          <td>
+            <textarea
+              formControlName="description"
+              name="description" class="form-control" required></textarea>
+
+            <!-- show this error if the field is 'empty' and 'touched' -->
+            <div
+              *ngIf="create_cd_form.get('description').touched && create_cd_form.get('description').hasError('required')"
+              class="alert alert-danger">
+              Description is required.
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Collection</td>
+          <td>
+            <select formControlName="collection_id" name="collection_id" class="form-control">
+              <option *ngFor="let collection of collections" value="{{collection.id}}">
+                {{collection.name}}
+              </option>
+            </select>
+            <!-- show this error if the field is 'empty' and 'touched' -->
+            <div
+              *ngIf="create_cd_form.get('collection_id').touched && create_cd_form.get('collection_id').hasError('required')"
+              class="alert alert-danger">
+              Collection is required.
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <!-- disable the submit button if the form is 'invalid' -->
+            <button class="btn btn-primary" type="submit" [disabled]="create_cd_form.invalid">
+              <span class="glyphicon glyphicon-plus"></span> Create
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+  </div>
+</div>

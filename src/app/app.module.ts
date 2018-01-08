@@ -1,11 +1,19 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import   { Service } from './Classes/service';
+
 import { AppComponent }  from './app.component';
+import {FormsModule , ReactiveFormsModule } from '@angular/forms';
+import {HttpModule} from '@angular/http';
+import  { ReadCdsComponent } from './read-cds.component';
+import  { CreateCdComponent } from './create-cd.component';
+
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+  providers: [ Service  ],
+  imports:      [ BrowserModule , FormsModule , HttpModule , ReactiveFormsModule ],
+  declarations: [ AppComponent ,  ReadCdsComponent , CreateCdComponent  ],
+  bootstrap:    [ AppComponent , ReadCdsComponent   ]
 })
 export class AppModule { }
