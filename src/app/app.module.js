@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var service_1 = require("./Classes/service");
+var collectionservice_1 = require("./Classes/collectionservice");
 var app_component_1 = require("./app.component");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
@@ -20,10 +21,10 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        providers: [service_1.Service],
+        providers: [service_1.Service, collectionservice_1.CollectionService, platform_browser_1.BrowserModule],
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, forms_1.ReactiveFormsModule],
         declarations: [app_component_1.AppComponent, read_cds_component_1.ReadCdsComponent, create_cd_component_1.CreateCdComponent],
-        bootstrap: [app_component_1.AppComponent, read_cds_component_1.ReadCdsComponent]
+        bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
 exports.AppModule = AppModule;

@@ -25,7 +25,7 @@ export class CreateCdComponent {
   // list of collections
   collection: Collections[];
 
-  // initialize 'cd service', 'collection service' and 'form builder'
+  // initialize 'cd service', 'category service' and 'form builder'
   constructor(
     private cdService: Service,
     private collectionService: CollectionService,
@@ -36,7 +36,7 @@ export class CreateCdComponent {
       name: ['', Validators.required],
       price: ['', Validators.required],
       description: ['', Validators.required],
-      collection_id: ['', Validators.required]
+      category_id: ['', Validators.required]
     });
   }
 
@@ -47,7 +47,7 @@ export class CreateCdComponent {
     this.cdService.createCd(this.create_cd_form.value)
       .subscribe(
         cd => {
-          // show an alert to tell the user if cd was created or not
+          // show an alert to tell the user if product was created or not
           console.log(cd);
 
           // go back to list of cds
@@ -59,6 +59,7 @@ export class CreateCdComponent {
 
   // user clicks the 'read cds' button
   readCds() {
+    console.log('first');
     this.show_read_cds_event.emit({ title: 'Read Cds' });
   }
 

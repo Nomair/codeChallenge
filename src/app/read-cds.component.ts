@@ -1,8 +1,9 @@
-import { Component, OnInit , Input , Output, EventEmitter } from '@angular/core';
+import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 import { Service } from './Classes/service';
 import { Cd } from './Classes/cd';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
+
 
 /*
     * Needed to notify the 'consumer of this component', which is the 'AppComponent',
@@ -23,7 +24,7 @@ export class ReadCdsComponent implements OnInit {
     * Needed to notify the 'consumer of this component', which is the 'AppComponent',
       that an 'event' happened in this component.
 */
-  @Output() show_create_cd_event= new EventEmitter();
+  @Output() show_create_cd_event  = new EventEmitter();
   @Output() show_read_one_cd_event = new EventEmitter();
   @Output() show_update_cd_event = new EventEmitter();
   @Output() show_delete_cd_event = new EventEmitter();
@@ -34,12 +35,14 @@ export class ReadCdsComponent implements OnInit {
   // initialize cdService to retrieve list cds in the ngOnInit()
 
   // methods that we will use later
-  createCd() {
-    console.log('therrrrrrrrrrrrrrrrrrrrrrrr');
+  createMyCd(): void {
     // tell the parent component (AppComponent)
-      this.show_create_cd_event.emit(null);
+    this.show_create_cd_event.emit({
+      title: 'Create Product'
+    });
   }
   readOneCd( id: any ) {
+    this.constructor();
     console.log('rp comp readOnecd');
     // tell the parent component (AppComponent)
     this.show_read_one_cd_event.emit({
@@ -58,3 +61,6 @@ export class ReadCdsComponent implements OnInit {
 
   }
 }
+
+
+

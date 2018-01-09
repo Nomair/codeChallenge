@@ -2,6 +2,7 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import   { Service } from './Classes/service';
+import   { CollectionService } from './Classes/collectionservice';
 
 import { AppComponent }  from './app.component';
 import {FormsModule , ReactiveFormsModule } from '@angular/forms';
@@ -11,9 +12,9 @@ import  { CreateCdComponent } from './create-cd.component';
 
 
 @NgModule({
-  providers: [ Service  ],
+  providers: [ Service , CollectionService, BrowserModule   ],
   imports:      [ BrowserModule , FormsModule , HttpModule , ReactiveFormsModule ],
   declarations: [ AppComponent ,  ReadCdsComponent , CreateCdComponent  ],
-  bootstrap:    [ AppComponent , ReadCdsComponent   ]
+  bootstrap:    [ AppComponent  ]
 })
 export class AppModule { }
