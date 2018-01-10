@@ -12,7 +12,7 @@ con.connect(function(err) {
   var sql = "CREATE TABLE Collections(\n" +
     "    CollectionId INT AUTO_INCREMENT PRIMARY KEY,\n" +
     "    NAME VARCHAR(255),\n" +
-    "    CdsCount INT\n" +
+    "    Desribe VARCHAR(500)\n" +
     ")";
   con.query(sql, function (err, result) {
     if (err) throw err;
@@ -34,8 +34,8 @@ con.connect(function(err) {
 
 
   console.log("Start!");
-  sql = "INSERT INTO Collections(NAME, CdsCount)\n" +
-    "VALUES('Music', 0),('Videos', 0),('Games', 0);";
+  sql = "INSERT INTO Collections(NAME, Desribe)\n" +
+    "VALUES('Music', 'ororoororoororooro'),('Videos', 'rerererrrererer'),('Games', 'rarararararararar');";
   con.query(sql, function (err, result) {
     if (err) throw err;
     console.log("3 record inserted");

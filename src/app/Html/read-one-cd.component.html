@@ -1,0 +1,49 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<ng-container *ngFor="let cd of ReadOnecd">
+<div class="row m-b-18px">
+  <div class="col-md-12" >
+    <a (click)="readCds(cd.CollectionId)" class='btn btn-primary pull-right'>
+      <span class='glyphicon glyphicon-list'></span> Read Cds
+    </a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <!-- HTML table for displaying a Readcd details -->
+    <table class='table table-hover table-responsive table-bordered' >
+
+      <tr >
+        <td class="w-40-pct">Cd Id</td>
+        <td>{{cd?.CdId}}</td>
+      </tr>
+      <tr>
+        <td class="w-40-pct">Title</td>
+        <td>{{cd?.Title}}</td>
+      </tr>
+
+
+      <tr>
+        <td>Collection</td>
+        <td>&#36;{{cd?.NAME}}</td>
+      </tr>
+
+      <tr>
+        <td>Capacity</td>
+        <td>{{cd?.Capacity}}</td>
+      </tr>
+
+      <tr>
+        <td>DataUsage</td>
+        <td>{{cd?.DataUsage}}</td>
+      </tr>
+
+      <tr>
+        <td>Description</td>
+        <td>{{cd?.Desribe}}</td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+</ng-container>

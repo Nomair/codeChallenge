@@ -1,0 +1,117 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<div class="row m-b-18px">
+  <div class="col-md-12">
+    <a (click)="readCds()" class='btn btn-primary pull-right'>
+      <span class='glyphicon glyphicon-list'></span> Read Cds
+    </a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+
+    <!-- HTML form for creating a cd -->
+    <Form [formGroup]="update_cd_form" (ngSubmit)="updateCd()">
+      <table class='table table-hover table-responsive table-bordered'>
+
+        <tr>
+          <td>Title</td>
+          <td>
+            <input formControlName="Title"
+                   type='text' name='Title'
+                   class='form-control' required />
+
+            <!-- show this error if the field is 'touched' and 'empty' -->
+            <div
+              *ngIf="update_cd_form.get('Title').touched && update_cd_form.get('Title').hasError('required')"
+              class="alert alert-danger">
+              Title is required.
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Capacity</td>
+          <td>
+            <input
+              formControlName="Capacity"
+              type='number' name='Capacity'
+              class='form-control' required />
+
+            <!-- show this error if the field is 'touched' and 'empty' -->
+            <div
+              *ngIf="update_cd_form.get('Capacity').touched && update_cd_form.get('Capacity').hasError('required')"
+              class="alert alert-danger">
+              Capacity is required.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Data Usage</td>
+          <td>
+            <input
+              formControlName="DataUsage"
+              type='number' name='DataUsage'
+              class='form-control' required />
+
+            <!-- show this error if the field is 'touched' and 'empty' -->
+            <div
+              *ngIf="update_cd_form.get('DataUsage').touched && update_cd_form.get('DataUsage').hasError('required')"
+              class="alert alert-danger">
+              Data Usage is required.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Description</td>
+          <td>
+            <textarea
+              formControlName="Desribe"
+              name='Desribe' class='form-control'></textarea>
+
+            <!-- show this error if the field is 'touched' and 'empty' -->
+            <div
+              *ngIf="update_cd_form.get('Desribe').touched && update_cd_form.get('Desribe').hasError('required')"
+              class="alert alert-danger">
+              Description is required.
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Collection</td>
+          <td>
+            <select formControlName="CollectionId" name='CollectionId' class='form-control'>
+              <option
+                *ngFor="let collection of collections"
+                [selected]="CollectionId==collection.CollectionId"
+                value='{{collection.CollectionId}}'>
+                {{collection.NAME}}
+              </option>
+            </select>
+
+            <!-- show this error if the field is 'touched' and 'empty' -->
+            <div
+              *ngIf="update_cd_form.get('CollectionId').touched && update_cd_form.get('CollectionId').hasError('required')"
+              class="alert alert-danger">
+              Collection is required.
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <!-- Submit buttons is [disabled] if form is invalid. -->
+            <button class="btn btn-primary" type="submit" [disabled]="update_cd_form.invalid">
+              <span class="glyphicon glyphicon-edit"></span> Update
+            </button>
+          </td>
+        </tr>
+
+      </table>
+    </Form>
+
+  </div>
+</div>

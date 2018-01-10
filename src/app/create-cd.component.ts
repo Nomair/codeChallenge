@@ -1,9 +1,8 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import {Component, Output, EventEmitter, Inject, Injectable, OnInit, Input} from '@angular/core';
+import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { Service } from './Classes/service';
 import { CollectionService } from './Classes/collectionservice';
-import { Observable } from 'rxjs/Observable';
-import { Cd } from './Classes/cd';
+
 import { Collections } from './Classes/collections';
 
 @Component({
@@ -14,40 +13,47 @@ import { Collections } from './Classes/collections';
 })
 
 // component for creating a cd record
-export class CreateCdComponent {
+@Injectable()
+export class CreateCdComponent implements  OnInit {
 
   // our angular form
   create_cd_form: FormGroup;
 
   // @Output will tell the parent component (AppComponent) that an event happened in this component
   @Output() show_read_cds_event = new EventEmitter();
+  @Input() collection_id: any;
 
   // list of collections
   collection: Collections[];
 
-  // initialize 'cd service', 'category service' and 'form builder'
+  // initialize 'cd service', 'collection service' and 'form builder'
   constructor(
     private cdService: Service,
     private collectionService: CollectionService,
     formBuilder: FormBuilder
   ) {
+
+    this.collectionService.readCollections ()
+      .subscribe(Mycollections => this.collection = Mycollections);
+
     // based on our html form, build our angular form
     this.create_cd_form = formBuilder.group({
-      name: ['', Validators.required],
-      price: ['', Validators.required],
-      description: ['', Validators.required],
-      category_id: ['', Validators.required]
+      Title: ['', Validators.required],
+      Capacity: ['', Validators.required],
+      DataUsage: ['', Validators.required],
+      CollectionId: ['', Validators.required],
+      Desribe: ['', Validators.required]
     });
-  }
+    }
 
   // user clicks 'create' button
-  createCd() {
+  createCd(): void {
 
     // send data to server
     this.cdService.createCd(this.create_cd_form.value)
       .subscribe(
         cd => {
-          // show an alert to tell the user if product was created or not
+          // show an alert to tell the user if cd was created or not
           console.log(cd);
 
           // go back to list of cds
@@ -57,16 +63,20 @@ export class CreateCdComponent {
       );
   }
 
+
   // user clicks the 'read cds' button
   readCds() {
-    console.log('first');
-    this.show_read_cds_event.emit({ title: 'Read Cds' });
+    this.show_read_cds_event.emit({ title: 'Read Cds',
+      collection_id: this.collection_id,
+      });
   }
 
   // what to do when this component were initialized
   ngOnInit() {
     // read collections from database
+  /*  console.log('Firstttttttttttt');
     this.collectionService.readCollections()
-      .subscribe(collections => this.collection = collections['records']);
+      .subscribe(Mycollections => this.collection = Mycollections);
+    console.log(this.collection);*/
       }
 }

@@ -5,6 +5,9 @@
     <a (click)="createMyCd()" class='btn btn-primary pull-right'>
       <span class='glyphicon glyphicon-plus'></span> Create Cd
     </a>
+    <a (click)="ShowCollections()" class='btn btn-primary pull-left'>
+      <span class='glyphicon glyphicon-plus'></span> Show Collections
+    </a>
   </div>
 </div>
 <div class="row">
@@ -14,8 +17,8 @@
     <table class='table table-hover table-responsive table-bordered table-striped table-condensed'>
       <tr>
         <th>ID</th>
-        <th>Collection</th>
         <th>Title</th>
+        <th>Collection</th>
         <th>Capacity</th>
         <th>Data Usage</th>
         <th>Description</th>
@@ -25,24 +28,24 @@
       <!-- Use *ngFor directive to loop throught our list of cds. -->
       <tr *ngFor="let cd of cds">
         <td>{{cd.CdId}}</td>
-        <td>{{cd.NAME}}</td>
         <td>{{cd.Title}}</td>
+        <td>{{cd.NAME}}</td>
         <td>{{cd.Capacity}}</td>
         <td>{{cd.DataUsage}}</td>
         <td>{{cd.Desribe}}</td>
         <td>
           <!-- read one cd button -->
-          <a (click)="readOneCd(cd.id)" class='btn btn-primary m-r-5px'>
+          <a (click)="readOneCdBtn(cd.CdId,cd.CollectionId)" class='btn btn-primary m-r-5px'>
             <span class='glyphicon glyphicon-eye-open'></span> Read
           </a>
 
           <!-- edit cd button -->
-          <a (click)="updateCd(cd.id)" class='btn btn-info m-r-5px'>
+          <a (click)="updateCd(cd.CdId,cd.CollectionId)" class='btn btn-info m-r-5px'>
             <span class='glyphicon glyphicon-edit'></span> Edit
           </a>
 
           <!-- delete cd button -->
-          <a (click)="deleteCd(cd.id)" class='btn btn-danger m-r-5px'>
+          <a (click)="deleteCd(cd.CdId,cd.CollectionId)" class='btn btn-danger m-r-5px'>
             <span class='glyphicon glyphicon-remove'></span> Delete
           </a>
         </td>

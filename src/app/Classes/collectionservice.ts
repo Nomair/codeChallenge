@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import {Headers, Http, RequestOptions, Response} from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import { Collections } from './collections';
+import {Cd} from './cd';
 
 @Injectable()
 
@@ -19,6 +20,23 @@ export class CollectionService {
       .get('http://localhost:8000/api/collections')
       .map(res => res.json());
   }
+  // Get cds number in a collections from remote server.
+  countCds(collection_id: any): Observable<number> {
+    return this._http
+      .get('http://localhost:8000/api/count_cds/' + collection_id)
+      .map(res => res.json());
+  }
+  // Send cd data to remote server to create it.
+  createCollection( collection: any ): Observable<Collections> {
 
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    let options = new RequestOptions({ headers: headers });
+
+    return this._http.post(
+      'http://localhost:8000/api/create_collection',
+      collection,
+      options
+    ).map(res => res.json());
+  }
 
 }

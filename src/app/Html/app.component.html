@@ -8,17 +8,59 @@
     </div>
   </div>
 
-  <!-- Show this view if "show_read_products_html" property of AppComponent is true. -->
+  <!-- Show this view if "show_read_cds_html" property of AppComponent is true. -->
 
-
-      <app-read-cds
-        *ngIf="show_read_cds_html"
-        (show_create_cd_event)="showCreateCdEvent($event)">
+  <app-read-cds
+    *ngIf="show_read_cds_html"
+    (show_create_cd_event)="showCreateCdEvent($event)"
+    (show_read_one_cd_event)="showReadOneCd($event)"
+    (show_update_cd_event)="showUpdateCd($event)"
+    (show_delete_cd_event)="showDeleteCd($event)"
+    (show_read_collections_html)="showCollection($event)"
+    [collection_id]="collection_id"
+   >
   </app-read-cds>
+  <app-read-collections
+    *ngIf="show_read_collections_html"
+    (show_create_collection_event)="ShowCreateCollection($event)"
+    (show_read_cds_event)="showReadCds($event)">
+  </app-read-collections>
+
+
+
   <app-create-cd
     *ngIf="show_create_cd_html"
+    [collection_id]="collection_id"
     (show_read_cds_event)="showReadCds($event)">
   </app-create-cd>
 
+
+
+  <app-read-one-cd
+    *ngIf="show_read_one_cd_html"
+    (show_read_cds_event)="showReadCds($event)"
+    [cd_id]="cd_id"
+    [collection_id]="collection_id"
+  >
+  </app-read-one-cd>
+
+
+  <app-update-cd
+    *ngIf="show_update_cd_html"
+    [cd_id]="cd_id"
+    [collection_id]="collection_id"
+    (show_read_cds_event)="showReadCds($event)">
+  </app-update-cd>
+
+<app-create-collection
+  *ngIf="show_create_collections_html"
+  (show_read_collections_event)="showCollection($event)"
+ > </app-create-collection>
+  <app-delete-cd
+    *ngIf="show_delete_cd_html"
+    [cd_id]="cd_id"
+    [collection_id]="collection_id"
+    (show_read_cds_event)="showReadCds($event)">
+  </app-delete-cd>
 </div>
 <!-- /container -->

@@ -1,4 +1,4 @@
-import {Component, OnInit, Output, EventEmitter} from '@angular/core';
+import {Component, OnInit, Output, EventEmitter, Input} from '@angular/core';
 import { Service } from './Classes/service';
 import { Cd } from './Classes/cd';
 import { Injectable } from '@angular/core';
@@ -28,7 +28,8 @@ export class ReadCdsComponent implements OnInit {
   @Output() show_read_one_cd_event = new EventEmitter();
   @Output() show_update_cd_event = new EventEmitter();
   @Output() show_delete_cd_event = new EventEmitter();
-
+  @Output() show_read_collections_html = new EventEmitter();
+  @Input() collection_id: any;
   constructor(private service: Service) {}
   cds: Cd[];
   // store list of cds
@@ -38,23 +39,44 @@ export class ReadCdsComponent implements OnInit {
   createMyCd(): void {
     // tell the parent component (AppComponent)
     this.show_create_cd_event.emit({
-      title: 'Create Product'
+      collection_id: this.collection_id,
+      title: 'Create Cd',
     });
   }
-  readOneCd( id: any ) {
-    this.constructor();
-    console.log('rp comp readOnecd');
+  ShowCollections(): void {
+    // tell the parent component (AppComponent)
+    this.show_read_collections_html.emit({
+      title: 'Read Collections'
+    });
+  }
+  readOneCdBtn( id: any, collection_id: any ): void {
     // tell the parent component (AppComponent)
     this.show_read_one_cd_event.emit({
       cd_id: id,
+      collection_id: collection_id,
       title: 'Read One Cd'
     });
   }
-  updateCd() {}
-  deletePCd( ) {}
+  updateCd(id: any , collection_id: any): void {
+    // tell the parent component (AppComponent)
+    this.show_update_cd_event.emit({
+      cd_id: id,
+      collection_id: collection_id,
+      title: 'Update Cd'
+    });
+  }
+  deleteCd(id: any , collection_id: any): void {
+    // when user clicks the 'delete' button
+      // tell the parent component (AppComponent)
+      this.show_delete_cd_event.emit({
+        cd_id: id,
+        collection_id: collection_id,
+        title: 'Delete Cd'
+      });
+  }
   // Read Cds from API.
   ngOnInit() {
-    this.service.readCds()
+    this.service.readCds(this.collection_id)
       .subscribe( cds =>
         this.cds = cds
       );
