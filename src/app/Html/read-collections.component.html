@@ -2,7 +2,7 @@
 <div class="row m-b-18px">
   <div class="col-md-12">
     <!-- button to create new collection -->
-    <a (click)="createMyCollection()" class='btn btn-primary pull-right'>
+    <a (click)="createMyCollection()" class='btn btn-primary pull-right' style="background-color: chocolate">
       <span class='glyphicon glyphicon-plus'></span> Crio/Create Collections
     </a>
   </div>
@@ -17,7 +17,7 @@
 
         <th>ID</th>
         <th>NAME</th>
-        <th>Description</th>
+        <th class="col-md-9">Description</th>
         <th class="col-md-1"></th>
 
       </tr>
@@ -29,7 +29,7 @@
         <td>{{collection.Desribe}}</td>
         <!-- read one collection cds button -->
         <a (click)="readCdsBtn(collection.CollectionId)" class='btn  m-r-px'>
-          <span class='glyphicon glyphicon-folder-open'></span> Discos-Discs
+          <span class='glyphicon glyphicon-folder-open' ></span> Discos-Discs
         </a>
       </tr>
     </table>

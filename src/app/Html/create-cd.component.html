@@ -2,7 +2,7 @@
 
 <div class="row m-b-18px">
   <div class="col-md-12">
-    <a (click)="readCds()" class='btn btn-primary pull-right'>
+    <a (click)="readCds()" class='btn btn-primary pull-left' style="background-color: chocolate">
       <span class='glyphicon glyphicon-list'></span> Discos-Discs
     </a>
   </div>
@@ -109,8 +109,8 @@
           <td></td>
           <td>
             <!-- disable the submit button if the form is 'invalid' -->
-            <button class="btn btn-primary" type="submit" [disabled]="create_cd_form.invalid">
-              <span class="glyphicon glyphicon-plus"></span> Create
+            <button class="btn btn-primary" type="submit" [disabled]="create_cd_form.invalid"style="background-color: chocolate">
+              <span class="glyphicon glyphicon-plus" ></span> Create
             </button>
           </td>
         </tr>

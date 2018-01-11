@@ -2,7 +2,7 @@
 
 <div class="row m-b-18px">
   <div class="col-md-12">
-    <a (click)="readCds()" class='btn btn-primary pull-right'>
+    <a (click)="readCds()" class='btn btn-primary pull-left' style="background-color: chocolate">
       <span class='glyphicon glyphicon-list'></span> Discos-Discs
     </a>
   </div>
@@ -11,7 +11,11 @@
 <div class="row">
   <div class="col-md-12"><br><br>
 
+
     <!-- HTML form for creating a cd -->
+
+    <div *ngIf="update_cd_form">
+
     <Form [formGroup]="update_cd_form" (ngSubmit)="updateCd()">
       <table class='table table-hover table-responsive table-bordered table-striped table-condensed'>
 
@@ -31,7 +35,6 @@
             </div>
           </td>
         </tr>
-
         <tr>
           <td><b>Capacidade/Capacity</b></td>
           <td>
@@ -108,7 +111,7 @@
           <td></td>
           <td>
             <!-- Submit buttons is [disabled] if form is invalid. -->
-            <button class="btn btn-primary" type="submit" [disabled]="update_cd_form.invalid">
+            <button class="btn btn-primary" type="submit" [disabled]="update_cd_form.invalid" style="background-color: chocolate">
               <span class="glyphicon glyphicon-edit"></span> Update
             </button>
           </td>
@@ -116,5 +119,6 @@
 
       </table>
     </Form>
+    </div>
   </div>
 </div>

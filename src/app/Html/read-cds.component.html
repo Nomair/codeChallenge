@@ -2,11 +2,11 @@
 <div class="row m-b-18px">
   <div class="col-md-12">
     <!-- button to create new cd -->
-    <a (click)="createMyCd()" class='btn btn-primary pull-right'>
-      <span class='glyphicon glyphicon-plus'></span> Crio/Create Disc
+    <a (click)="createMyCd()" class='btn btn-primary pull-right' style="background-color: chocolate">
+      <span class='glyphicon glyphicon-plus' style="background-color: chocolate"></span> Crio/Create Disc
     </a>
-    <a (click)="ShowCollections()" class='btn btn-primary pull-left'>
-      <span class='glyphicon'></span> Collections-Catálogo
+    <a (click)="ShowCollections()" class='btn btn-primary pull-left' style="background-color: chocolate">
+      <span class='glyphicon'  ></span> Collections-Catálogo
     </a>
   </div>
 </div>
@@ -16,7 +16,7 @@
 
     <div class="input-group">
       <div class="input-group-addon"><i class="fa fa-search"></i></div>
-      <input type="text" class="form-control" placeholder="Search Cds" [(ngModel)]="searchCd">
+      <input type="text" class="form-control" placeholder="Search Discs - Pesquisar discos" [(ngModel)]="searchCd">
     </div>
 
     <!-- HTML table for our list of cd records -->
@@ -27,7 +27,7 @@
         <th>Collection</th>
         <th>Capacity</th>
         <th>Data Usage</th>
-        <th class="col-lg-6">Description</th>
+        <th class="col-lg-5">Description</th>
         <th class="col-md-3" ></th>
       </tr>
 

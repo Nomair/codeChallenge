@@ -27,13 +27,9 @@ export class Service {
   // Get list of collection name from remote server.
   readCollectionName(collection_id: any): Observable<string>  {
     return this._http
-      .get( '/api/collectionName/:collection_id'+ collection_id)
+      .get( 'http://localhost:8000/api/collectionName/' + collection_id)
       .map(res => res.json());
   }
-
-
-
-
   // Send cd data to remote server to create it.
   createCd( cd: any ): Observable<Cd> {
 
@@ -56,7 +52,8 @@ export class Service {
 
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
-
+    console.log('herein the service');
+    console.log(cd);
     return this._http.post(
       'http://localhost:8000/api/updatecd',
       cd,
@@ -75,4 +72,11 @@ export class Service {
       options
     ).map(res => res.json());
   }
+
+  readCdsCount(collection_id: any): Observable<number> {
+    return this._http
+      .get('http://localhost:8000/api/count_cds/' + collection_id)
+      .map(res => res.json());
+  }
+
 }

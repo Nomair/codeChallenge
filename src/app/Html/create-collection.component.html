@@ -1,7 +1,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <div class="row m-b-18px">
   <div class="col-md-12">
-    <a (click)="readCollectionss()" class='btn btn-primary pull-left'>
+    <a (click)="readCollectionss()" class='btn btn-primary pull-left' style="background-color: chocolate">
       <span class='glyphicon glyphicon-list'></span> Collections-Catálogo
     </a>
   </div>
@@ -57,8 +57,8 @@
           <td></td>
           <td>
             <!-- disable the submit button if the form is 'invalid' -->
-            <button class="btn btn-primary" type="submit" [disabled]="create_collection_form.invalid">
-              <span class="glyphicon glyphicon-plus"></span> Create
+            <button class="btn btn-primary" type="submit" [disabled]="create_collection_form.invalid"style="background-color: chocolate">
+              <span class="glyphicon glyphicon-plus" ></span> Create
             </button>
           </td>
         </tr>

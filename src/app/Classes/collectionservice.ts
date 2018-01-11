@@ -20,12 +20,6 @@ export class CollectionService {
       .get('http://localhost:8000/api/collections')
       .map(res => res.json());
   }
-  // Get cds number in a collections from remote server.
-  countCds(collection_id: any): Observable<number> {
-    return this._http
-      .get('http://localhost:8000/api/count_cds/' + collection_id)
-      .map(res => res.json());
-  }
   // Send cd data to remote server to create it.
   createCollection( collection: any ): Observable<Collections> {
 

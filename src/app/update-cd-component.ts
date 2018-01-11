@@ -2,10 +2,10 @@ import {Component, OnChanges, Input, Output, EventEmitter, Injectable} from '@an
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Service } from './Classes/service';
 import { CollectionService } from './Classes/collectionservice';
-import { Observable } from 'rxjs/Observable';
 import { Collections } from './Classes/collections';
 import {Cd} from './Classes/cd';
 import { NgForm } from '@angular/forms';
+import {Title} from '@angular/platform-browser';
 @Component({
   selector: 'app-update-cd',
   templateUrl: './Html/update-cd.component.html',
@@ -23,7 +23,7 @@ export class UpdateCdComponent implements OnChanges {
   @Input() collection_id: any;
   cd: Cd;
   categories: Collections[];
-
+  obj: any;
   // initialize cd & category services
   constructor(
     private cdService: Service,
@@ -46,7 +46,6 @@ export class UpdateCdComponent implements OnChanges {
 
     // add cd_id in the object so it can be updated
     this.update_cd_form.value.id = this.cd_id;
-
     // send data to server
     this.cdService.updateCd(this.update_cd_form.value)
       .subscribe(
@@ -73,23 +72,20 @@ export class UpdateCdComponent implements OnChanges {
   // read collections from database
   ngOnInit() {
     this.cdService.readOneCd(this.cd_id)
-      .subscribe(cd => {
-      //  this.cd = cd;
-        console.log( );
-       // console.log( this.cd.Title);
+      .subscribe((cd: any) => {
+        this.update_cd_form.patchValue({
+          Title: JSON.parse(JSON.stringify(cd))[0]['Title'],
+          Capacity: JSON.parse(JSON.stringify(cd))[0]['Capacity'],
+          DataUsage: JSON.parse(JSON.stringify(cd))[0]['DataUsage'],
+          CollectionId: JSON.parse(JSON.stringify(cd))[0]['CollectionId'],
+          Desribe: JSON.parse(JSON.stringify(cd))[0]['Desribe']
+        });
       });
-        // put values in the form
-      /*  this.update_cd_form.patchValue({
-          Title: cd.Title,
-          Capacity: cd.Capacity,
-          DataUsage: cd.DataUsage,
-          CollectionId: cd.CollectionId,
-          Desribe: cd.Desribe
-        });*/
       //  console.log(cd.Title);
        // this.update_cd_form.controls['Title'].setValue(cd.Title);
        //  console.log(cd.Title);
     this.collectionService.readCollections()
       .subscribe(collections => this.collections = collections);
+
   }
 }

@@ -110,13 +110,13 @@ executeQuery (query,res);
 });
 
 app.route('/api/updatecd').post((req, res) => {
-  var CdId = req.body.CdId;
+  var CdId = req.body.id;
   var Title = req.body.Title;
   var Capacity = req.body.Capacity;
   var DataUsage = req.body.DataUsage;
   var CollectionId = req.body.CollectionId;
   var Desribe = req.body.Desribe;
-  var query ="UPDATE `cds` SET `CollectionId`="+CollectionId+",`Title`="+Title+",`Capacity`="+Capacity+",`DataUsage`="+DataUsage+",`Desribe`="+Desribe+" WHERE  CdId ="+CdId;
+  var query ="UPDATE `cds` SET `CollectionId`="+CollectionId+",`Title`='"+Title+"',`Capacity`="+Capacity+",`DataUsage`="+DataUsage+",`Desribe`='"+Desribe+"' WHERE  CdId ="+CdId;
   executeQuery (query,res);
 
   });
@@ -128,7 +128,7 @@ app.route('/api/read_one_cd/:cd_id').get((req, res) => {
 
 app.route('/api/count_cds/:collection_id').get((req, res) => {
   var collection_id = req.params.collection_id;
-var query ="SELECT COUNT(*) FROM `cds` WHERE CollectionId="+ collection_id;
+var query ="SELECT COUNT(*) as count FROM `cds` WHERE CollectionId="+ collection_id;
 executeQuery (query,res);
 });
 

@@ -1,19 +1,23 @@
+<div class="container-fluid">
+<!-- show page header -->
+<div class="row" style="background-image: url('../../img-res/cover.PNG');height: 202px;" >
+  <div class="col-md-12" >
 
+    <div class=' knockout'  >{{title}}
+    </div>
 
+    <div class="text-center" style="color: chocolate;font-size: 20px"> {{helloMessage}}</div>
+
+  </div>
+</div>
+</div>
 <!-- container -->
 <div class="container" >
 
-  <!-- show page header -->
-  <div class="row" >
-    <div class="col-md-12">
-      <div class='page-header knockout' >{{title}}
-      </div>
-    </div>
-    </div>
 
 
   <!-- Show this view if "show_read_cds_html" property of AppComponent is true. -->
-
+  <br><br>
   <app-read-cds
     *ngIf="show_read_cds_html"
     (show_create_cd_event)="showCreateCdEvent($event)"

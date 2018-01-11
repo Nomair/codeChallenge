@@ -35,10 +35,10 @@ con.connect(function(err) {
 
   console.log("Start!");
   sql = "INSERT INTO Collections(NAME, Desribe)\n" +
-    "VALUES('Music', 'ororoororoororooro'),('Videos', 'rerererrrererer'),('Games', 'rarararararararar');";
+    "VALUES('Music', 'Collection of my music discs it is really awesome'),('Videos', 'Collection of my videos discs it includes movies'),('Games', 'cool');";
   con.query(sql, function (err, result) {
     if (err) throw err;
-    console.log("3 record inserted");
+    console.log("3 Collections inserted");
   });
   sql = "INSERT INTO Cds(\n" +
     "    CollectionId,\n" +
@@ -62,7 +62,7 @@ con.connect(function(err) {
     "),(3, 'Pes', 700, 340, 'pff');";
   con.query(sql, function (err, result) {
     if (err) throw err;
-    console.log("another 3  record inserted");
+    console.log(" 3 Discs  record inserted");
   });
 });
 
