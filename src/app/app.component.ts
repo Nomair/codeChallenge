@@ -20,7 +20,7 @@ export class AppComponent  {
   show_update_cd_html = false;
   show_delete_cd_html = false;
   show_create_collections_html = false;
-// show details of a product
+// show details of a cd
   showReadOneCd($event: any) {
     // set title and cd ID
     this.title = $event.title;

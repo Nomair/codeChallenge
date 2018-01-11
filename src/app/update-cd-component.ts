@@ -22,9 +22,8 @@ export class UpdateCdComponent implements OnChanges {
   @Input() cd_id: any;
   @Input() collection_id: any;
   cd: Cd;
-  categories: Collections[];
   obj: any;
-  // initialize cd & category services
+  // initialize cd & collections services
   constructor(
     private cdService: Service,
     private collectionService: CollectionService,
@@ -80,10 +79,8 @@ export class UpdateCdComponent implements OnChanges {
           CollectionId: JSON.parse(JSON.stringify(cd))[0]['CollectionId'],
           Desribe: JSON.parse(JSON.stringify(cd))[0]['Desribe']
         });
+        console.log(this.update_cd_form);
       });
-      //  console.log(cd.Title);
-       // this.update_cd_form.controls['Title'].setValue(cd.Title);
-       //  console.log(cd.Title);
     this.collectionService.readCollections()
       .subscribe(collections => this.collections = collections);
 

@@ -40,7 +40,7 @@ export class DeleteCdComponent {
       );
   }
 
-  // user clicks the 'read products' button
+  // user clicks the 'read cds' button
   readCds() {
     this.show_read_cds_event.emit({ title: 'Discos-Discs' ,
       collection_id: this.collection_id}

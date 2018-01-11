@@ -60,7 +60,7 @@ export class Service {
       options
     ).map(res => res.json());
   }
-  // Send product ID to remote server to delete it.
+  // Send cf ID to remote server to delete it.
   deleteCd(cd_id: any) {
 
     let headers = new Headers({ 'Content-Type': 'application/json' });

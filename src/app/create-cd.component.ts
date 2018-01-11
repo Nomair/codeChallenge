@@ -73,10 +73,7 @@ export class CreateCdComponent implements  OnInit {
 
   // what to do when this component were initialized
   ngOnInit() {
+    this.create_cd_form.patchValue({CollectionId:this.collection_id});
     // read collections from database
-  /*  console.log('Firstttttttttttt');
-    this.collectionService.readCollections()
-      .subscribe(Mycollections => this.collection = Mycollections);
-    console.log(this.collection);*/
       }
 }

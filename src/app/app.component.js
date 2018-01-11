@@ -24,7 +24,7 @@ var AppComponent = (function () {
         this.show_delete_cd_html = false;
         this.show_create_collections_html = false;
     }
-    // show details of a product
+    // show details of a cd
     AppComponent.prototype.showReadOneCd = function ($event) {
         // set title and cd ID
         this.title = $event.title;
