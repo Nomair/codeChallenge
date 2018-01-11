@@ -7,7 +7,7 @@ import {Component} from '@angular/core';
 export class AppComponent  {
 
   // properties for child components
-  title = 'Read Cds';
+  title = 'Read Collections';
   cd_id: any;
   collection_id: any;
 
@@ -68,7 +68,7 @@ export class AppComponent  {
     this.show_update_cd_html = true;
   }
   // show 'are you sure?' prompt to confirm deletion of a record
-  showDeleteCd($event: any){
+  showDeleteCd($event: any) {
     this.collection_id = $event.collection_id;
     // set title and cd ID
     this.title = $event.title;

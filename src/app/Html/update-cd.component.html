@@ -10,9 +10,9 @@
 
 <div class="row">
   <div class="col-md-12">
-
+<ng-container *ngFor="let update_cd_forma of update_cd_form">
     <!-- HTML form for creating a cd -->
-    <Form [formGroup]="update_cd_form" (ngSubmit)="updateCd()">
+    <Form [formGroup]="update_cd_forma" (ngSubmit)="updateCd()">
       <table class='table table-hover table-responsive table-bordered'>
 
         <tr>
@@ -24,7 +24,7 @@
 
             <!-- show this error if the field is 'touched' and 'empty' -->
             <div
-              *ngIf="update_cd_form.get('Title').touched && update_cd_form.get('Title').hasError('required')"
+              *ngIf="update_cd_forma.get('Title').touched && update_cd_forma.get('Title').hasError('required')"
               class="alert alert-danger">
               Title is required.
             </div>
@@ -41,7 +41,7 @@
 
             <!-- show this error if the field is 'touched' and 'empty' -->
             <div
-              *ngIf="update_cd_form.get('Capacity').touched && update_cd_form.get('Capacity').hasError('required')"
+              *ngIf="update_cd_forma.get('Capacity').touched && update_cd_forma.get('Capacity').hasError('required')"
               class="alert alert-danger">
               Capacity is required.
             </div>
@@ -57,7 +57,7 @@
 
             <!-- show this error if the field is 'touched' and 'empty' -->
             <div
-              *ngIf="update_cd_form.get('DataUsage').touched && update_cd_form.get('DataUsage').hasError('required')"
+              *ngIf="update_cd_forma.get('DataUsage').touched && update_cd_forma.get('DataUsage').hasError('required')"
               class="alert alert-danger">
               Data Usage is required.
             </div>
@@ -72,7 +72,7 @@
 
             <!-- show this error if the field is 'touched' and 'empty' -->
             <div
-              *ngIf="update_cd_form.get('Desribe').touched && update_cd_form.get('Desribe').hasError('required')"
+              *ngIf="update_cd_forma.get('Desribe').touched && update_cd_forma.get('Desribe').hasError('required')"
               class="alert alert-danger">
               Description is required.
             </div>
@@ -93,7 +93,7 @@
 
             <!-- show this error if the field is 'touched' and 'empty' -->
             <div
-              *ngIf="update_cd_form.get('CollectionId').touched && update_cd_form.get('CollectionId').hasError('required')"
+              *ngIf="update_cd_forma.get('CollectionId').touched && update_cd_forma.get('CollectionId').hasError('required')"
               class="alert alert-danger">
               Collection is required.
             </div>
@@ -104,7 +104,7 @@
           <td></td>
           <td>
             <!-- Submit buttons is [disabled] if form is invalid. -->
-            <button class="btn btn-primary" type="submit" [disabled]="update_cd_form.invalid">
+            <button class="btn btn-primary" type="submit" [disabled]="update_cd_forma.invalid">
               <span class="glyphicon glyphicon-edit"></span> Update
             </button>
           </td>
@@ -112,6 +112,6 @@
 
       </table>
     </Form>
-
+</ng-container>
   </div>
 </div>

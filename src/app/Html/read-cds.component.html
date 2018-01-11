@@ -6,12 +6,18 @@
       <span class='glyphicon glyphicon-plus'></span> Create Cd
     </a>
     <a (click)="ShowCollections()" class='btn btn-primary pull-left'>
-      <span class='glyphicon glyphicon-plus'></span> Show Collections
+      <span class='glyphicon'></span> Show  Categories
     </a>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12">
+
+
+    <div class="input-group">
+      <div class="input-group-addon"><i class="fa fa-search"></i></div>
+      <input type="text" class="form-control" placeholder="Search Cds" [(ngModel)]="searchCd">
+    </div>
 
     <!-- HTML table for our list of cd records -->
     <table class='table table-hover table-responsive table-bordered table-striped table-condensed'>
@@ -26,7 +32,7 @@
       </tr>
 
       <!-- Use *ngFor directive to loop throught our list of cds. -->
-      <tr *ngFor="let cd of cds">
+      <tr *ngFor="let cd of cds | searchfilter : searchCd">
         <td>{{cd.CdId}}</td>
         <td>{{cd.Title}}</td>
         <td>{{cd.NAME}}</td>
@@ -35,7 +41,7 @@
         <td>{{cd.Desribe}}</td>
         <td>
           <!-- read one cd button -->
-          <a (click)="readOneCdBtn(cd.CdId,cd.CollectionId)" class='btn btn-primary m-r-5px'>
+          <a (click)="readOneCdBtn(cd.CdId, cd.CollectionId)" class='btn btn-primary m-r-5px'>
             <span class='glyphicon glyphicon-eye-open'></span> Read
           </a>
 

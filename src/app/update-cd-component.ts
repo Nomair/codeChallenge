@@ -69,6 +69,9 @@ export class UpdateCdComponent implements OnChanges {
   ngOnChanges() {
 
     // read one cd record
+  }
+  // read collections from database
+  ngOnInit() {
     this.cdService.readOneCd(this.cd_id)
       .subscribe(cd => {
 
@@ -80,10 +83,8 @@ export class UpdateCdComponent implements OnChanges {
           CollectionId: cd.CollectionId,
           Desribe: cd.Desribe
         });
+        // console.log(this.update_cd_form)
       });
-  }
-  // read collections from database
-  ngOnInit() {
     this.collectionService.readCollections()
       .subscribe(collections => this.collections = collections);
   }

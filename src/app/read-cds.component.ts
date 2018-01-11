@@ -40,7 +40,7 @@ export class ReadCdsComponent implements OnInit {
     // tell the parent component (AppComponent)
     this.show_create_cd_event.emit({
       collection_id: this.collection_id,
-      title: 'Create Cd',
+      title: 'Create Cd'
     });
   }
   ShowCollections(): void {

@@ -14,11 +14,11 @@ import  { ReadOneCdComponent } from './read-one-cd.component';
 import { UpdateCdComponent } from './update-cd-component';
 import { DeleteCdComponent } from './delete-cd.component';
 import { CreateCollectionComponent } from './create-collection.component';
-
+import { FilterPipe } from './search-filter-pipe.component';
 @NgModule({
   providers: [ Service , CollectionService, BrowserModule   ],
   imports:      [ BrowserModule , FormsModule , HttpModule , ReactiveFormsModule ],
-  declarations: [ AppComponent ,  ReadCdsComponent , CreateCdComponent , ReadOneCdComponent , UpdateCdComponent , DeleteCdComponent , ReadCollectionsComponent , CreateCollectionComponent],
+  declarations: [ AppComponent ,  ReadCdsComponent , CreateCdComponent , ReadOneCdComponent , UpdateCdComponent , DeleteCdComponent , ReadCollectionsComponent , CreateCollectionComponent , FilterPipe],
   bootstrap:    [ AppComponent  ]
 })
 export class AppModule { }

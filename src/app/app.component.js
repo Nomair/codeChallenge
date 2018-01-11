@@ -9,7 +9,7 @@ var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
         // properties for child components
-        this.title = 'Read Cds';
+        this.title = 'Read Collections';
         this.show_read_collections_html = true;
         this.show_read_cds_html = false;
         this.show_create_cd_html = false;

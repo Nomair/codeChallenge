@@ -45,7 +45,8 @@ export class DeleteCdComponent {
   // user clicks the 'read products' button
   readCds() {
     this.show_read_cds_event.emit({ title: 'Read Cd' ,
-      collection_id: this.collection_id});
+      collection_id: this.collection_id}
+      );
   }
 
 }
