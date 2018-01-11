@@ -1,12 +1,11 @@
-import {Component, OnInit, Input, Output, OnChanges, EventEmitter, Injectable} from '@angular/core';
+import {Component, Input, Output, OnChanges, EventEmitter, Injectable} from '@angular/core';
 import { Service } from './Classes/service';
-import { Observable } from 'rxjs/Observable';
 import { Cd } from './Classes/cd';
 
 @Component({
   selector: 'app-read-one-cd',
   templateUrl: './Html/read-one-cd.component.html',
-  // styleUrls: ['./read-one-cd.component.css'],
+  styleUrls: ['./Css/tablesAdds.css'],
   providers: [Service]
 })
 @Injectable()
@@ -29,7 +28,7 @@ export class ReadOneCdComponent implements OnChanges {
 
   // user clicks the 'read cds' button
   readCds(collection_id: any) {
-    this.show_read_cds_event.emit({ title: 'Read Cds',
+    this.show_read_cds_event.emit({ title: 'Discos-Discs',
       collection_id: collection_id});
   }
 

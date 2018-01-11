@@ -3,26 +3,27 @@
 <div class="row m-b-18px">
   <div class="col-md-12">
     <a (click)="readCds()" class='btn btn-primary pull-right'>
-      <span class='glyphicon glyphicon-list'></span> Read Cds
+      <span class='glyphicon glyphicon-list'></span> Discos-Discs
     </a>
   </div>
 </div>
 
 <!-- HTML form for creating a cd -->
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-12"><br><br>
 
     <!--
         1. Bind our HTML form to Angular using [formGroup]
         2. If form was submitted, call createCd() method of CreateCdComponent
     -->
     <form [formGroup]="create_cd_form" (ngSubmit)="createCd()">
-      <table class="table table-hover table-responsive table-bordered">
+      <table class="table table-hover table-responsive table-bordered table-striped table-condensed">
         <tr>
-          <td>Title</td>
+          <td><b>Título/Title</b></td>
           <td>
             <!-- Bind this input field to our 'angular form field' using formControlName -->
             <input
+              placeholder="string/Disc Title - corda/Título do Disco"
               formControlName="Title"
               name="Title" type="text"
               class="form-control" required />
@@ -37,9 +38,10 @@
         </tr>
 
         <tr>
-          <td>Capacity</td>
+          <td><b>Capacidade/Capacity</b></td>
           <td>
             <input
+              placeholder="numbers/Disc Capacity - números/Capacidade do Disco"
               formControlName="Capacity"
               type="number" name="Capacity"
               class="form-control" required />
@@ -53,9 +55,10 @@
           </td>
         </tr>
         <tr>
-          <td>Data Usage</td>
+          <td><b>Uso de Dados/Data Usage</b></td>
           <td>
             <input
+              placeholder="numbers/Data Usage - números/Uso de Dados"
               formControlName="DataUsage"
               type="number" name="DataUsage"
               class="form-control" required />
@@ -69,9 +72,10 @@
           </td>
         </tr>
         <tr>
-          <td>Description</td>
+          <td><b>Descrição/Description</b></td>
           <td>
             <textarea
+              placeholder="string/Description  - corda/Descrição"
               formControlName="Desribe"
               name="Desribe" class="form-control" required></textarea>
 
@@ -85,7 +89,7 @@
         </tr>
 
         <tr>
-          <td>Collection</td>
+          <td><b>Catálogo/Collection</b></td>
           <td>
             <select formControlName="CollectionId" name="CollectionId" class="form-control">
               <option *ngFor="let collection of collection" value="{{collection.CollectionId}}">

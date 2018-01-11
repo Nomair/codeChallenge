@@ -1,4 +1,4 @@
-import {Component, Output, EventEmitter, Inject, Injectable, OnInit, Input} from '@angular/core';
+import {Component, Output, EventEmitter, Injectable, OnInit} from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { CollectionService } from './Classes/collectionservice';
 
@@ -7,7 +7,7 @@ import { Collections } from './Classes/collections';
 @Component({
   selector: 'app-create-collection',
   templateUrl: './Html/create-collection.component.html',
-  // styleUrls: ['./Css/create-collection.component.css'],
+  styleUrls: ['./Css/tablesAdds.css'],
   providers: [ CollectionService]
 })
 
@@ -37,7 +37,7 @@ export class CreateCollectionComponent implements  OnInit {
     });
   }
   readCollectionss(): void {
-    this.show_read_collections_event.emit({title: 'Read Collections'});
+    this.show_read_collections_event.emit({title: 'Collections-Catálogo'});
   }
   // user clicks 'create' button
   createCollection(): void {
@@ -59,7 +59,7 @@ export class CreateCollectionComponent implements  OnInit {
 
   // user clicks the 'read cds' button
   readCollections() {
-    this.show_read_collections_event.emit({ title: 'Create Collection',
+    this.show_read_collections_event.emit({ title: 'Crio/Create Collection',
     });
   }
 

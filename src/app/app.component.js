@@ -9,7 +9,7 @@ var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
         // properties for child components
-        this.title = 'Read Collections';
+        this.title = 'Collections-Catálogo';
         this.show_read_collections_html = true;
         this.show_read_cds_html = false;
         this.show_create_cd_html = false;
@@ -94,6 +94,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
+        styleUrls: ['./Css/tablesAdds.css'],
         templateUrl: './Html/app.component.html',
     })
 ], AppComponent);

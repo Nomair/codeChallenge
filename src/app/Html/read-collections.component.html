@@ -3,20 +3,23 @@
   <div class="col-md-12">
     <!-- button to create new collection -->
     <a (click)="createMyCollection()" class='btn btn-primary pull-right'>
-      <span class='glyphicon glyphicon-plus'></span> Create Collection
+      <span class='glyphicon glyphicon-plus'></span> Crio/Create Collections
     </a>
   </div>
+
+
 </div>
 <div class="row">
-  <div class="col-md-12">
-
+  <div class="col-md-12"><br><br>
     <!-- HTML table for our list of collection records -->
     <table class='table table-hover table-responsive table-bordered table-striped table-condensed'>
       <tr>
+
         <th>ID</th>
         <th>NAME</th>
         <th>Description</th>
-        <th></th>
+        <th class="col-md-1"></th>
+
       </tr>
 
       <!-- Use *ngFor directive to loop throught our list of collections. -->
@@ -25,8 +28,8 @@
         <td>{{collection.NAME}}</td>
         <td>{{collection.Desribe}}</td>
         <!-- read one collection cds button -->
-        <a (click)="readCdsBtn(collection.CollectionId)" class='btn btn-primary m-r-px'>
-          <span class='glyphicon glyphicon-eye-open'></span> Read
+        <a (click)="readCdsBtn(collection.CollectionId)" class='btn  m-r-px'>
+          <span class='glyphicon glyphicon-folder-open'></span> Discos-Discs
         </a>
       </tr>
     </table>

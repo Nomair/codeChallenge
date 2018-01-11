@@ -14,7 +14,7 @@ import 'rxjs/add/operator/map';
 @Component({
   selector: 'app-read-cds',
   templateUrl: './Html/read-cds.component.html',
-  // styleUrls: ['./read-cds.component.css'],
+  styleUrls: ['./Css/tablesAdds.css'],
   providers: [Service]
 })
 
@@ -40,13 +40,13 @@ export class ReadCdsComponent implements OnInit {
     // tell the parent component (AppComponent)
     this.show_create_cd_event.emit({
       collection_id: this.collection_id,
-      title: 'Create Cd'
+      title: 'Crio/Create Disc'
     });
   }
   ShowCollections(): void {
     // tell the parent component (AppComponent)
     this.show_read_collections_html.emit({
-      title: 'Read Collections'
+      title: 'Collections-Catálogo'
     });
   }
   readOneCdBtn( id: any, collection_id: any ): void {
@@ -54,7 +54,7 @@ export class ReadCdsComponent implements OnInit {
     this.show_read_one_cd_event.emit({
       cd_id: id,
       collection_id: collection_id,
-      title: 'Read One Cd'
+      title: 'Disco-Disc'
     });
   }
   updateCd(id: any , collection_id: any): void {
@@ -62,7 +62,7 @@ export class ReadCdsComponent implements OnInit {
     this.show_update_cd_event.emit({
       cd_id: id,
       collection_id: collection_id,
-      title: 'Update Cd'
+      title: 'Edit-Editar'
     });
   }
   deleteCd(id: any , collection_id: any): void {
@@ -71,7 +71,7 @@ export class ReadCdsComponent implements OnInit {
       this.show_delete_cd_event.emit({
         cd_id: id,
         collection_id: collection_id,
-        title: 'Delete Cd'
+        title: 'Delete/Eliminar'
       });
   }
   // Read Cds from API.

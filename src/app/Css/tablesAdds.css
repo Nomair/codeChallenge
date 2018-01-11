@@ -1,0 +1,36 @@
+
+th{
+  text-align: center;
+  background-color:#d4e3e5;
+}
+td {
+  text-align: center;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+.knockout {
+  color: darkslategrey;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: "Sakkal Majalla", helvetica;
+  width: 700px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+body{
+  background: #d4e3e5;
+}

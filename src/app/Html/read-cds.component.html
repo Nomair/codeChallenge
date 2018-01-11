@@ -3,15 +3,15 @@
   <div class="col-md-12">
     <!-- button to create new cd -->
     <a (click)="createMyCd()" class='btn btn-primary pull-right'>
-      <span class='glyphicon glyphicon-plus'></span> Create Cd
+      <span class='glyphicon glyphicon-plus'></span> Crio/Create Disc
     </a>
     <a (click)="ShowCollections()" class='btn btn-primary pull-left'>
-      <span class='glyphicon'></span> Show  Categories
+      <span class='glyphicon'></span> Collections-Catálogo
     </a>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-12"><br><br>
 
 
     <div class="input-group">
@@ -27,8 +27,8 @@
         <th>Collection</th>
         <th>Capacity</th>
         <th>Data Usage</th>
-        <th>Description</th>
-        <th></th>
+        <th class="col-lg-6">Description</th>
+        <th class="col-md-3" ></th>
       </tr>
 
       <!-- Use *ngFor directive to loop throught our list of cds. -->
@@ -42,7 +42,7 @@
         <td>
           <!-- read one cd button -->
           <a (click)="readOneCdBtn(cd.CdId, cd.CollectionId)" class='btn btn-primary m-r-5px'>
-            <span class='glyphicon glyphicon-eye-open'></span> Read
+            <span class='glyphicon  glyphicon-folder-open'></span> Details
           </a>
 
           <!-- edit cd button -->

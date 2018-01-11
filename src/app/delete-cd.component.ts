@@ -1,7 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Service } from './Classes/service';
-import { Observable } from 'rxjs/Observable';
-import { Cd } from './Classes/cd';
 
 @Component({
   selector: 'app-delete-cd',
@@ -44,7 +42,7 @@ export class DeleteCdComponent {
 
   // user clicks the 'read products' button
   readCds() {
-    this.show_read_cds_event.emit({ title: 'Read Cd' ,
+    this.show_read_cds_event.emit({ title: 'Discos-Discs' ,
       collection_id: this.collection_id}
       );
   }

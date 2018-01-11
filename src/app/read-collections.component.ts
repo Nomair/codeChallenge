@@ -3,7 +3,6 @@ import { CollectionService } from './Classes/collectionservice';
 import { Collections } from './Classes/collections';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
-import {forEach} from '@angular/router/src/utils/collection';
 
 
 /*
@@ -15,7 +14,7 @@ import {forEach} from '@angular/router/src/utils/collection';
 @Component({
   selector: 'app-read-collections',
   templateUrl: './Html/read-collections.component.html',
-  // styleUrls: ['./read-cds.component.css'],
+  styleUrls: ['./Css/tablesAdds.css'],
   providers: [CollectionService]
 })
 
@@ -37,7 +36,7 @@ export class ReadCollectionsComponent implements OnInit {
   createMyCollection(): void {
     // tell the parent component (AppComponent)
     this.show_create_collection_event.emit({
-      title: 'Create Collection'
+      title: 'Crio/Create Collection'
     });
   }
 
@@ -45,10 +44,10 @@ export class ReadCollectionsComponent implements OnInit {
     // tell the parent component (AppComponent)
     this.show_read_cds_event.emit({
       collection_id: id,
-      title: 'Read Cds'
+      title: 'Discos-Discs'
     });
   }
-    // Read Collections from API.
+    // Collections-Catálogo from API.
   ngOnInit() {
     this.service.readCollections()
       .subscribe( collections => {

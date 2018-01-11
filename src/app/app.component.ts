@@ -2,12 +2,13 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'my-app',
+  styleUrls: ['./Css/tablesAdds.css'],
   templateUrl: './Html/app.component.html',
 })
 export class AppComponent  {
 
   // properties for child components
-  title = 'Read Collections';
+  title = 'Collections-Catálogo';
   cd_id: any;
   collection_id: any;
 

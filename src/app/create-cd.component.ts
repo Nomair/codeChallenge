@@ -1,4 +1,4 @@
-import {Component, Output, EventEmitter, Inject, Injectable, OnInit, Input} from '@angular/core';
+import {Component, Output, EventEmitter, Injectable, OnInit, Input} from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { Service } from './Classes/service';
 import { CollectionService } from './Classes/collectionservice';
@@ -8,7 +8,7 @@ import { Collections } from './Classes/collections';
 @Component({
   selector: 'app-create-cd',
   templateUrl: './Html/create-cd.component.html',
-  // styleUrls: ['./Css/create-cdscomponent.css'],
+  styleUrls: ['./Css/tablesAdds.css'],
   providers: [Service, CollectionService]
 })
 

@@ -3,43 +3,42 @@
 <div class="row m-b-18px">
   <div class="col-md-12" >
     <a (click)="readCds(cd.CollectionId)" class='btn btn-primary pull-right'>
-      <span class='glyphicon glyphicon-list'></span> Read Cds
+      <span class='glyphicon glyphicon-list'></span> Discos-Discs
     </a>
   </div>
 </div>
 
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-12"><br><br>
     <!-- HTML table for displaying a Readcd details -->
-    <table class='table table-hover table-responsive table-bordered' >
+    <table class='table table-hover table-responsive table-bordered table-striped table-condensed' >
 
       <tr >
-        <td class="w-40-pct">Cd Id</td>
+        <td class="w-40-pct"><b>ID</b></td>
         <td>{{cd?.CdId}}</td>
       </tr>
       <tr>
-        <td class="w-40-pct">Title</td>
+        <td class="w-40-pct"><b>Título/Title</b></td>
         <td>{{cd?.Title}}</td>
       </tr>
 
-
       <tr>
-        <td>Collection</td>
+        <td><b>Catálogo/Collection</b></td>
         <td>{{cd?.NAME}}</td>
       </tr>
 
       <tr>
-        <td>Capacity</td>
+        <td><b>Capacidade/Capacity</b></td>
         <td>{{cd?.Capacity}}</td>
       </tr>
 
       <tr>
-        <td>DataUsage</td>
+        <td><b>Uso de Dados/Data Usage</b></td>
         <td>{{cd?.DataUsage}}</td>
       </tr>
 
       <tr>
-        <td>Description</td>
+        <td><b>Descrição/Description</b></td>
         <td>{{cd?.Desribe}}</td>
       </tr>
 

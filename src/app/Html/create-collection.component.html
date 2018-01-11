@@ -1,28 +1,28 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 <div class="row m-b-18px">
   <div class="col-md-12">
-    <a (click)="readCollectionss()" class='btn btn-primary pull-right'>
-      <span class='glyphicon glyphicon-list'></span> Read Collections
+    <a (click)="readCollectionss()" class='btn btn-primary pull-left'>
+      <span class='glyphicon glyphicon-list'></span> Collections-Catálogo
     </a>
   </div>
 </div>
 
 <!-- HTML form for creating a Collection -->
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-12"><br><br>
 
     <!--
         1. Bind our HTML form to Angular using [formGroup]
         2. If form was submitted, call createCd() method of CreateCdComponent
     -->
     <form [formGroup]="create_collection_form" (ngSubmit)="createCollection()">
-      <table class="table table-hover table-responsive table-bordered">
+      <table class="table table-hover table-responsive table-bordered table-striped table-condensed">
         <tr>
-          <td>Name</td>
+          <td><b>Name</b></td>
           <td>
             <!-- Bind this input field to our 'angular form field' using formControlName -->
             <input
+              placeholder="Collection Name - nome da coleção"
               formControlName="NAME"
               name="NAME" type="text"
               class="form-control" required />
@@ -37,9 +37,10 @@
         </tr>
 
         <tr>
-          <td>Description</td>
+          <td><b>Description</b></td>
           <td>
             <textarea
+              placeholder="Collection Description - descrição da coleção"
               formControlName="Desribe"
               name="Desribe" class="form-control" required></textarea>
 

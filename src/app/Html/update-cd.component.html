@@ -3,28 +3,29 @@
 <div class="row m-b-18px">
   <div class="col-md-12">
     <a (click)="readCds()" class='btn btn-primary pull-right'>
-      <span class='glyphicon glyphicon-list'></span> Read Cds
+      <span class='glyphicon glyphicon-list'></span> Discos-Discs
     </a>
   </div>
 </div>
 
 <div class="row">
-  <div class="col-md-12">
-<ng-container *ngFor="let update_cd_forma of update_cd_form">
+  <div class="col-md-12"><br><br>
+
     <!-- HTML form for creating a cd -->
-    <Form [formGroup]="update_cd_forma" (ngSubmit)="updateCd()">
-      <table class='table table-hover table-responsive table-bordered'>
+    <Form [formGroup]="update_cd_form" (ngSubmit)="updateCd()">
+      <table class='table table-hover table-responsive table-bordered table-striped table-condensed'>
 
         <tr>
-          <td>Title</td>
+          <td><b>Título/Title</b></td>
           <td>
-            <input formControlName="Title"
+            <input placeholder="string/Disc Title - corda/Título do Disco"
+                   formControlName="Title"
                    type='text' name='Title'
                    class='form-control' required />
 
             <!-- show this error if the field is 'touched' and 'empty' -->
             <div
-              *ngIf="update_cd_forma.get('Title').touched && update_cd_forma.get('Title').hasError('required')"
+              *ngIf="update_cd_form.get('Title').touched && update_cd_form.get('Title').hasError('required')"
               class="alert alert-danger">
               Title is required.
             </div>
@@ -32,47 +33,50 @@
         </tr>
 
         <tr>
-          <td>Capacity</td>
+          <td><b>Capacidade/Capacity</b></td>
           <td>
             <input
+              placeholder="numbers/Disc Capacity - números/Capacidade do Disco"
               formControlName="Capacity"
               type='number' name='Capacity'
               class='form-control' required />
 
             <!-- show this error if the field is 'touched' and 'empty' -->
             <div
-              *ngIf="update_cd_forma.get('Capacity').touched && update_cd_forma.get('Capacity').hasError('required')"
+              *ngIf="update_cd_form.get('Capacity').touched && update_cd_form.get('Capacity').hasError('required')"
               class="alert alert-danger">
               Capacity is required.
             </div>
           </td>
         </tr>
         <tr>
-          <td>Data Usage</td>
+          <td><b>Uso de Dados/Data Usage</b></td>
           <td>
             <input
+              placeholder="numbers/Data Usage - números/Uso de Dados"
               formControlName="DataUsage"
               type='number' name='DataUsage'
               class='form-control' required />
 
             <!-- show this error if the field is 'touched' and 'empty' -->
             <div
-              *ngIf="update_cd_forma.get('DataUsage').touched && update_cd_forma.get('DataUsage').hasError('required')"
+              *ngIf="update_cd_form.get('DataUsage').touched && update_cd_form.get('DataUsage').hasError('required')"
               class="alert alert-danger">
               Data Usage is required.
             </div>
           </td>
         </tr>
         <tr>
-          <td>Description</td>
+          <td><b>Descrição/Description</b></td>
           <td>
             <textarea
+              placeholder="string/Description  - corda/Descrição"
               formControlName="Desribe"
               name='Desribe' class='form-control'></textarea>
 
             <!-- show this error if the field is 'touched' and 'empty' -->
             <div
-              *ngIf="update_cd_forma.get('Desribe').touched && update_cd_forma.get('Desribe').hasError('required')"
+              *ngIf="update_cd_form.get('Desribe').touched && update_cd_form.get('Desribe').hasError('required')"
               class="alert alert-danger">
               Description is required.
             </div>
@@ -80,7 +84,7 @@
         </tr>
 
         <tr>
-          <td>Collection</td>
+          <td><b>Catálogo/Collection</b></td>
           <td>
             <select formControlName="CollectionId" name='CollectionId' class='form-control'>
               <option
@@ -93,7 +97,7 @@
 
             <!-- show this error if the field is 'touched' and 'empty' -->
             <div
-              *ngIf="update_cd_forma.get('CollectionId').touched && update_cd_forma.get('CollectionId').hasError('required')"
+              *ngIf="update_cd_form.get('CollectionId').touched && update_cd_form.get('CollectionId').hasError('required')"
               class="alert alert-danger">
               Collection is required.
             </div>
@@ -104,7 +108,7 @@
           <td></td>
           <td>
             <!-- Submit buttons is [disabled] if form is invalid. -->
-            <button class="btn btn-primary" type="submit" [disabled]="update_cd_forma.invalid">
+            <button class="btn btn-primary" type="submit" [disabled]="update_cd_form.invalid">
               <span class="glyphicon glyphicon-edit"></span> Update
             </button>
           </td>
@@ -112,6 +116,5 @@
 
       </table>
     </Form>
-</ng-container>
   </div>
 </div>

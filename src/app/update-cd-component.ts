@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-update-cd',
   templateUrl: './Html/update-cd.component.html',
- // styleUrls: ['./update-cd.component.css'],
+ styleUrls: ['./Css/tablesAdds.css'],
   providers: [Service, CollectionService]
 })
 @Injectable()
@@ -60,7 +60,7 @@ export class UpdateCdComponent implements OnChanges {
 
   // user clicks the 'read cds' button
   readCds() {
-    this.show_read_cds_event.emit({ title: 'Read Cds',
+    this.show_read_cds_event.emit({ title: 'Discos-Discs',
       collection_id: this.collection_id,
     });
   }
@@ -74,17 +74,21 @@ export class UpdateCdComponent implements OnChanges {
   ngOnInit() {
     this.cdService.readOneCd(this.cd_id)
       .subscribe(cd => {
-
+      //  this.cd = cd;
+        console.log( );
+       // console.log( this.cd.Title);
+      });
         // put values in the form
-        this.update_cd_form.patchValue({
+      /*  this.update_cd_form.patchValue({
           Title: cd.Title,
           Capacity: cd.Capacity,
           DataUsage: cd.DataUsage,
           CollectionId: cd.CollectionId,
           Desribe: cd.Desribe
-        });
-        // console.log(this.update_cd_form)
-      });
+        });*/
+      //  console.log(cd.Title);
+       // this.update_cd_form.controls['Title'].setValue(cd.Title);
+       //  console.log(cd.Title);
     this.collectionService.readCollections()
       .subscribe(collections => this.collections = collections);
   }
