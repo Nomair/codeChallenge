@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b12eda2b-e5d2-4baf-b17c-d5a19e055c2d" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="TypeScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cd</find>
+      <find>cdService</find>
+      <find>cdService.readOneCd</find>
+      <find>Read Collections</find>
+      <find>Read Cds</find>
+      <find>Show</find>
+      <find>Read Cd</find>
+      <find>Create Cd</find>
+      <find>Create Collection</find>
+      <find>Crio/ Create Collection</find>
+      <find>place</find>
+      <find>Read One Cd</find>
+      <find>Delete Cd</find>
+      <find>Update Cd</find>
+      <find>Edit-editar</find>
+      <find>de</find>
+      <find>update_cd_form</find>
+      <find>inva</find>
+      <find>count</find>
+      <find>name</find>
+      <find>update</find>
+      <find>title</find>
+      <find>cdsc</find>
+      <find>wleco</find>
+      <find>this.discsCount</find>
+      <find>create</find>
+      <find>sea</find>
+      <find>collec</find>
+      <find>try</find>
+      <find>categ</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/db_create.js" />
+        <option value="$PROJECT_DIR$/src/app/Classes/cd.js" />
+        <option value="$PROJECT_DIR$/src/app/Css/read-cds.component.css" />
+        <option value="$PROJECT_DIR$/src/app/Html/read-cds.html" />
+        <option value="$PROJECT_DIR$/src/app/Html/das.html" />
+        <option value="$PROJECT_DIR$/src/app/Classes/Collection.ts" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/main.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/src/app/Html/cds.componenet.html" />
+        <option value="$PROJECT_DIR$/src/app/Classes/cd.ts" />
+        <option value="$PROJECT_DIR$/src/app/Html/read-one-product.html" />
+        <option value="$PROJECT_DIR$/src/app/Html/read-one-product.component.html" />
+        <option value="$PROJECT_DIR$/src/app/read-one-product.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/Classes/collections.ts" />
+        <option value="$PROJECT_DIR$/src/search-filter-pipe.component.css" />
+        <option value="$PROJECT_DIR$/src/search-filter-pipe.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/search-filter-pipe.component.ts" />
+        <option value="$PROJECT_DIR$/src/styles.css" />
+        <option value="$PROJECT_DIR$/src/app/Css/read-collections.component.css" />
+        <option value="$PROJECT_DIR$/src/app/read-cds.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/Html/delete-cd.component.html" />
+        <option value="$PROJECT_DIR$/src/app/read-cds.component.js" />
+        <option value="$PROJECT_DIR$/src/app/create-collection.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/delete-cd.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/read-collections.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/read-one-cd.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/delete-cd.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/create-collection.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/app.component.ts" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/src/app/Html/app.component.html" />
+        <option value="$PROJECT_DIR$/src/app/Css/tablesAdds.css" />
+        <option value="$PROJECT_DIR$/src/app/Html/create-collection.component.html" />
+        <option value="$PROJECT_DIR$/src/app/Html/create-cd.component.html" />
+        <option value="$PROJECT_DIR$/src/app/Html/read-one-cd.component.html" />
+        <option value="$PROJECT_DIR$/src/app/Html/update-cd.component.html" />
+        <option value="$PROJECT_DIR$/db_tables.js" />
+        <option value="$PROJECT_DIR$/src/app/Html/read-collections.component.html" />
+        <option value="$PROJECT_DIR$/src/app/Html/read-cds.component.html" />
+        <option value="$PROJECT_DIR$/src/app/Classes/collectionservice.ts" />
+        <option value="$PROJECT_DIR$/src/app/Classes/service.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/create-cd.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/update-cd-component.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="disc_lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="disc_lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="disc_lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="disc_lib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="disc_lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="disc_lib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.tslint" value="C:\Users\Nomair\disc_lib\node_modules\tslint" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nomair\disc_lib\src\app\component" />
+      <recent name="C:\Users\Nomair\disc_lib\src\app" />
+      <recent name="C:\Users\Nomair\disc_lib\src\app\Html" />
+      <recent name="C:\Users\Nomair\disc_lib\src\app\Css" />
+      <recent name="C:\Users\Nomair\disc_lib\src\app\read-cds" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b12eda2b-e5d2-4baf-b17c-d5a19e055c2d" name="Default" comment="" />
+      <created>1515355457021</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1515355457021</updated>
+      <workItem from="1515355464421" duration="1396000" />
+      <workItem from="1515358775406" duration="415000" />
+      <workItem from="1515359318930" duration="827000" />
+      <workItem from="1515360551457" duration="3185000" />
+      <workItem from="1515365041465" duration="12441000" />
+      <workItem from="1515381227835" duration="13328000" />
+      <workItem from="1515396201481" duration="3023000" />
+      <workItem from="1515429665856" duration="8177000" />
+      <workItem from="1515448271240" duration="4035000" />
+      <workItem from="1515453113121" duration="14096000" />
+      <workItem from="1515470297580" duration="21382000" />
+      <workItem from="1515536788488" duration="2586000" />
+      <workItem from="1515549564387" duration="1180000" />
+      <workItem from="1515551144117" duration="3826000" />
+      <workItem from="1515556122658" duration="15989000" />
+      <workItem from="1515573240032" duration="4494000" />
+      <workItem from="1515577851953" duration="12894000" />
+      <workItem from="1515606347075" duration="11498000" />
+      <workItem from="1515626924696" duration="34565000" />
+      <workItem from="1515688766557" duration="18084000" />
+    </task>
+    <task id="LOCAL-00001" summary="First commit DB and server">
+      <created>1515356422858</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1515356422858</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Second commit Cds and collections 35% done">
+      <created>1515373309543</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1515373309543</updated>
+    </task>
+    <task id="LOCAL-00003" summary="third commit Cds and collections 45% done">
+      <created>1515462656420</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1515462656420</updated>
+    </task>
+    <task id="LOCAL-00004" summary="third commit Cds and collections 75% done">
+      <created>1515585411684</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1515585411685</updated>
+    </task>
+    <task id="LOCAL-00005" summary="third commit Cds and collections 90% done">
+      <created>1515635394806</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1515635394806</updated>
+    </task>
+    <task id="LOCAL-00006" summary="third commit Cds and collections 90% done">
+      <created>1515658801274</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1515658801274</updated>
+    </task>
+    <task id="LOCAL-00007" summary="third commit Cds and collections 90% done">
+      <created>1515702936051</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1515702936051</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Delivery">
+      <created>1515704466143</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1515704466143</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="187421000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5029762" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.49702382" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24925596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/main.js.map" />
+        <option value="$PROJECT_DIR$/src/app/app.component.js" />
+        <option value="$PROJECT_DIR$/src/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/src/app/app.module.js" />
+        <option value="$PROJECT_DIR$/src/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/src/app/Classes/service.js" />
+        <option value="$PROJECT_DIR$/src/app/Classes/cd.js.map" />
+        <option value="$PROJECT_DIR$/src/app/Classes/service.js.map" />
+        <option value="$PROJECT_DIR$/src/app/Classes/cd.js" />
+        <option value="$PROJECT_DIR$/src/app/create-cd.component.js.map" />
+        <option value="$PROJECT_DIR$/src/app/create-cd.component.js" />
+        <option value="$PROJECT_DIR$/src/app/Classes/collectionservice.js.map" />
+        <option value="$PROJECT_DIR$/src/app/Classes/collectionservice.js" />
+        <option value="$PROJECT_DIR$/src/app/Classes/collections.js" />
+        <option value="$PROJECT_DIR$/src/app/Classes/collections.js.map" />
+        <option value="$PROJECT_DIR$/src/app/read-one-cd.component.js" />
+        <option value="$PROJECT_DIR$/src/app/read-one-cd.component.js.map" />
+        <option value="$PROJECT_DIR$/src/app/update-cd-component.js.map" />
+        <option value="$PROJECT_DIR$/src/app/update-cd-component.js" />
+        <option value="$PROJECT_DIR$/src/app/read-collections.component.js" />
+        <option value="$PROJECT_DIR$/src/app/read-collections.component.js.map" />
+        <option value="$PROJECT_DIR$/src/app/create-collection.component.js.map" />
+        <option value="$PROJECT_DIR$/src/app/create-collection.component.js" />
+        <option value="$PROJECT_DIR$/src/app/search-filter-pipe.component.js.map" />
+        <option value="$PROJECT_DIR$/src/app/search-filter-pipe.component.js" />
+        <option value="$PROJECT_DIR$/src/app/delete-cd.component.js" />
+        <option value="$PROJECT_DIR$/src/app/delete-cd.component.js.map" />
+        <option value="$PROJECT_DIR$/src/app/read-cds.component.js" />
+        <option value="$PROJECT_DIR$/src/app/read-cds.component.js.map" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit DB and server" />
+    <MESSAGE value="Second commit Cds and collections 35% done" />
+    <MESSAGE value="third commit Cds and collections 45% done" />
+    <MESSAGE value="third commit Cds and collections 75% done" />
+    <MESSAGE value="third commit Cds and collections 90% done" />
+    <MESSAGE value="Delivery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delivery" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/systemjs.config.extras.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/src/event_emitter.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="59" column="27" lean-forward="false" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="17" column="75" lean-forward="false" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/core-js/modules/web.dom.iterable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Html/cds.componenet.html" />
+    <entry file="file://$PROJECT_DIR$/src/app/Html/read-one-product.html" />
+    <entry file="file://$PROJECT_DIR$/src/app/Html/read-one-product.component.html" />
+    <entry file="file://$PROJECT_DIR$/src/app/read-one-product.component.ts" />
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/search-filter-pipe.component.css" />
+    <entry file="file://$PROJECT_DIR$/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Css/read-collections.component.css" />
+    <entry file="file://$PROJECT_DIR$/src/app/icons/collections-icon.png" />
+    <entry file="file://$PROJECT_DIR$/src/app/component/read-cds.component.js" />
+    <entry file="file://$PROJECT_DIR$/src/app/icons/style-icon.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/app/component/create-cd.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/component/delete-cd.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/component/read-collections.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/component/read-one-cd.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/component/app.module.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/component/update-cd-component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/component/search-filter-pipe.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/component/read-cds.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/component/create-collection.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/component/app.component.ts" />
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Html/delete-cd.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Html/read-one-cd.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="74" lean-forward="false" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#ng-container#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_tables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Html/create-collection.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="66" lean-forward="false" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Html/read-collections.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Html/read-cds.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="18" column="90" lean-forward="false" selection-start-line="18" selection-start-column="90" selection-end-line="18" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Css/read-cds.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Css/tablesAdds.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Html/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-745">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Classes/cd.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Classes/collections.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Classes/collectionservice.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1344">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#46#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/read-collections.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="54" column="9" lean-forward="false" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/read-one-cd.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-256">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#92#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Html/create-cd.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/create-cd.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="75" column="70" lean-forward="false" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/create-collection.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/delete-cd.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-392">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#71#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/read-cds.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-392">
+          <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Classes/service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-609">
+          <caret line="31" column="3" lean-forward="false" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/update-cd-component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="68" column="25" lean-forward="true" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Html/update-cd.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="102" column="53" lean-forward="false" selection-start-line="102" selection-start-column="41" selection-end-line="102" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#td#1;n#tr#5;n#table#0;n#Form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
